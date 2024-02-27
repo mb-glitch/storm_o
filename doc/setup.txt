@@ -1,0 +1,158 @@
+sudo apt update
+sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
+
+
+# postgres
+sudo -u postgres psql
+CREATE DATABASE storm;
+CREATE USER stormuser WITH PASSWORD 'S733BubaSlqbOMF5PM9u';
+ALTER ROLE stormuser SET client_encoding TO 'utf8';
+ALTER ROLE stormuser SET default_transaction_isolation TO 'read committed';
+ALTER ROLE stormuser SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE storm TO stormuser;
+\q
+
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+
+
+# dump database backup and restore
+# w formacie do pg_retore
+sudo -u postgres pg_dump -Fc storm > /home/maciek/devel/storm/pgdump/storm_db_bu_`date +"%Y%m%d%H%M%S"`.pgsql
+
+To restore backup use the following command:
+sudo -u postgres psql
+DROP DATABASE storm;
+CREATE DATABASE storm;
+GRANT ALL PRIVILEGES ON DATABASE storm TO stormuser;
+\q
+
+sudo -u postgres pg_restore -d storm  'filename'
+
+########### raczej tak jak wyżej
+# dodaj do crontab root jako użytkownik postgres
+# pg_dump storm | gzip -c > /home/maciek/storm/pgdump/storm_db_`date +"%Y%m%d%H%M%S"`.gz
+# z terminala
+# sudo -u postgres pg_dump storm | gzip -c > /home/maciek/devel/storm/pgdump/storm_db_bu_`date +"%Y%m%d%H%M%S"`.gz
+# gunzip /home/maciek/devel/storm/pgdump/all.dbs.out.gz
+# sudo -u postgres psql -f /home/maciek/devel/storm/pgdump/all.dbs.out
+
+
+# gunicorn
+sudo nano /etc/systemd/system/gunicorn.socket
+[Unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.sock
+
+[Install]
+WantedBy=sockets.target
+
+
+sudo nano /etc/systemd/system/gunicorn.service
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=maciek
+Group=www-data
+WorkingDirectory=/home/maciek/storm
+ExecStart=/home/maciek/storm/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          storm.wsgi:application
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl start gunicorn.socket
+sudo systemctl enable gunicorn.socket
+
+# nginx
+sudo nano /etc/nginx/sites-available/storm
+server {
+    listen 80;
+    server_name 192.168.2.206;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/maciek/storm;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+}
+
+sudo ln -s /etc/nginx/sites-available/storm /etc/nginx/sites-enabled
+sudo nginx -t
+sudo systemctl restart nginx
+
+
+# replikacja service
+sudo nano /etc/systemd/system/mbreplikacja.service
+[Unit]
+Description=replikacja mssql do postgres
+Requires=gunicorn.service
+After=network.target
+
+[Service]
+User=maciek
+Group=www-data
+WorkingDirectory=/home/maciek/storm
+ExecStart=/home/maciek/storm/venv/bin/python \
+          /home/maciek/storm/storm/manage.py \
+          replikuj_czynnosci
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+
+# urised_wstaw_do_mssql service
+sudo nano /etc/systemd/system/urised_wstaw_do_mssql.service
+[Unit]
+Description=Wstawia wyniki z urised do bazy mssql
+Requires=gunicorn.service
+After=network.target
+
+[Service]
+User=maciek
+Group=www-data
+WorkingDirectory=/home/maciek/storm
+ExecStart=/home/maciek/storm/venv/bin/python \
+          /home/maciek/storm/storm/manage.py \
+          urised_wstaw_do_mssql
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl start urised_wstaw_do_mssql.service
+sudo systemctl enable urised_wstaw_do_mssql.service
+
+
+
+# urised_astm service
+sudo nano /etc/systemd/system/urised_astm.service
+[Unit]
+Description=Komunikuje sie z urised
+Requires=gunicorn.service
+After=network.target
+
+[Service]
+User=maciek
+Group=www-data
+WorkingDirectory=/home/maciek/storm
+ExecStart=/home/maciek/storm/venv/bin/python \
+          /home/maciek/storm/storm/manage.py \
+          urised
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl start urised_astm.service
+sudo systemctl enable urised_astm.service
+

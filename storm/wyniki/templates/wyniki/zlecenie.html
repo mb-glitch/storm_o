@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title-nazwa %}{{ zlecenie.pacjent|title }}{% endblock title-nazwa %}
+
+
+
+{% block content %}
+<p>Zlecenie numer: {{ zlecenie.numer }} z {{ zlecenie.zlecone|date:"SHORT_DATETIME_FORMAT"  }} przyjęte {{ zlecenie.na_dzien|date:"SHORT_DATETIME_FORMAT"  }}</p>
+<p>Zlecone badania:</p>
+<div class="row">
+<div class="col-sm-10">
+<table class="table table-sm table-borderless small table-hover">
+  <colgroup>
+    <col class="col-sm-4">
+    <col class="col-sm-2">
+    <col class="col-sm-1">
+    <col class="col-sm-2">
+    <col class="col-sm-1">
+    <col class="col-sm-2">
+
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Badanie</th>
+      <th scope="col">Wynik</th>
+      <th scope="col">Flaga</th>
+      <th scope="col">Zakres wartości</th>
+      <th scope="col">Anulowany</th>
+      <th scope="col">Zatwierdzony</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for wynik in wyniki %}
+        {% if wynik.anulowany %}
+        <tr class='warning'>
+        {% elif wynik.flaga == 'H' %}
+        <tr class='czerwony'>
+        {% elif wynik.flaga == 'L' %}
+        <tr class='niebieski'>
+        {% else %}
+        <tr>
+      {% endif %}
+        <td>{{ wynik.badanie.nazwa }} </td>
+        <td>{% if wynik.odprawiony %}{{ wynik }}{% endif %}</td>
+        <td>{{wynik.flaga }} </td>
+        <td>{{wynik.wartosci_referencyjne.wydruk}} </td>
+        <td>{% if wynik.anulowany %} anulowany {% endif %} </td>
+        <td>{{wynik.odprawiony|date:"SHORT_DATETIME_FORMAT"}} </td>
+    </tr>
+
+    {% for w in wynik.children.all %}
+                {% if w.anulowany %}
+                <tr class='warning'>
+                {% elif w.flaga == 'H' %}
+                <tr class='czerwony'>
+                {% elif w.flaga == 'L' %}
+                <tr class='niebieski'>
+                {% else %}
+                <tr>
+              {% endif %}
+                <td>&emsp;{{ w.badanie.nazwa }}</td>
+                <td>{% if w.odprawiony %}{{ w }}{% endif %}</td>
+                <td>{{w.flaga }} </td>
+                <td>{{w.wartosci_referencyjne.wydruk}} </td>
+                <td>{% if w.anulowany %} anulowany {% endif %} </td>
+                <td>{{w.odprawiony|date:"SHORT_DATETIME_FORMAT"}} </td>
+            </tr>
+    {% endfor %}
+
+    {% endfor %}
+
+  </tbody>
+</table>
+                            </div>
+
+                </div>
+
+
+<p>Wyniki w formie pdf:</p>
+{% for pdf in zlecenie.wynikpdf_set.all %}
+    {% if pdf.podpisany %}
+        {% if not pdf.anulowany%}
+        <p>
+        <a class="zielony" href="{% url 'wyniki:wynikpdf' pdf.pk  %}"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+        Utworzony {{ pdf.created|date:"SHORT_DATETIME_FORMAT" }}
+        {% if not pdf.pobrany %}(nowy){% endif %}
+        </p>
+        {% else %}
+            <p>Utworzony {{ pdf.created|date:"SHORT_DATETIME_FORMAT" }}  <a class="czerwony" href=""><i class="fa fa-file-pdf-o fa-lg"></i></a> anulowany</p>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+
+{% endblock content %}
+
+
+
+
+
+
+

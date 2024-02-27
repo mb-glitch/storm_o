@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load admin_urls %}
+
+{% block title-nazwa %}Rejestarcja{% endblock title-nazwa %}
+
+
+
+{% block content %}
+
+<form action="." method="post" autocomplete="off">
+<div>
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-sm-10">
+        <select name=pacjent class="js-data-example-ajax"></select>
+    </div>
+    <div class="col-sm-2">
+        <a title="dodaj nowego pacjenta" class="zielony" href="{% url 'admin:wyniki_pacjent_add' %}"
+              onclick="window.open('{% url 'admin:wyniki_pacjent_add' %}', 
+                         'newwindow', 
+                         'width=600,height=700'); 
+              return false;"><i class="fa fa-2x fa-plus"></i>nowy</a>
+    </div>
+    </div>
+
+    {{ form }}
+    
+</div>
+<div>
+<input class="btn btn-success" type="submit" value="Zapisz">
+</div>
+</form>
+{% endblock content %}
+
+
+

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% load static %}
+
+{% block content %}
+{% if form.errors %}
+<p>Błędny użytkownik lub hasło. Proszę spróbować powtórnie</p>
+{% endif %}
+
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Twoje konto nie posiada uprawnień do tej strony, proszę zalogować się powtórnie</p>
+    {% endif %}
+{% endif %}
+
+<form action="{% url 'login' %}" method="post">
+{% csrf_token %}
+<table class="table table-borderless">
+  <colgroup>
+    <col class="col-sm-2">
+    <col class="col-sm-10">
+  </colgroup>
+  <tbody>
+<tr>
+    <td>{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td>&nbsp</td><td></td> 
+</tr>
+<tr>
+    <td>{{ form.password.label_tag }}</td>
+    <td>{{ form.password }}</td>
+</tr>
+  </tbody>
+</table>
+
+<button type="submit" value="login" class="btn btn-default">Zaloguj</button>
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
+
+
+
+{% endblock %}

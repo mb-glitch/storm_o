@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content-opcje %}
+{% endblock content-opcje %}
+
+
+
+{% block title-nazwa %}Stan podłączonych aparatów{% endblock title-nazwa %}
+
+
+
+{% block content %}
+{% if aparaty %}
+<table class="table table-sm table-borderless table-hover">
+  <colgroup>
+    <col class="col-sm-2">
+    <col class="col-sm-2">
+    <col class="col-sm-2">
+    <col class="col-sm-2">
+    <col class="col-sm-4">
+
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Aparat</th>
+      <th scope="col">Czas</th>
+      <th scope="col">ASTM</th>
+      <th scope="col">Błąd</th>
+      <th scope="col">Wyniki</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for a in aparaty %}
+    <tr>
+      <td>{{ a }}</td>
+      <td>{{ a.status|date:"SHORT_DATETIME_FORMAT" }}</td>
+      <td>{{a.astm}}</td>
+      <td>{{ a.astm_msg  }}</td>
+      <td class="small">
+      </td>
+    </tr>
+{% endfor %}
+
+  </tbody>
+</table>
+{% else %}
+    <p>Brak zleceń.</p>
+{% endif %}
+    <div class="row">
+            <nav>
+              <ul class="list-inline text-center small">
+                
+{% endblock content %}
+
+
+
+

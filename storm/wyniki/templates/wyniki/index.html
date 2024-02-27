@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content-opcje %}
+          <div class="col-sm-6 pull-right">
+            <nav class="clearfix">
+              <ul class="list-inline pull-right small">
+                
+                {% if zakres_dat == "niepobrane" %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-niepobrane' %}"><strong>niepobrane</strong></a></li>
+                {% else %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-niepobrane' %}">niepobrane</a></li>
+                {% endif %}
+                
+                {% if zakres_dat == "dzisiaj" %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-dzisiaj' %}"><strong>dzisiaj</strong></a></li>
+                {% else %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-dzisiaj' %}">dzisiaj</a></li>
+                {% endif %}
+                
+                {% if zakres_dat == "7dni" %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-7dni' %}"><strong>ostatnie 7 dni</strong></a></li>
+                {% else %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-7dni' %}">ostatnie 7 dni</a></li>
+                {% endif %}
+
+                {% if zakres_dat == "30dni" %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-30dni' %}"><strong>ostatnie 30 dni</strong></a></li>
+                {% else %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-30dni' %}">ostatnie 30 dni</a></li>
+                {% endif %}
+
+                {% if zakres_dat == "rok" %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-rok' %}"><strong>bieżący rok</strong></a></li>
+                {% else %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-rok' %}">bieżący rok</a></li>
+                {% endif %}
+
+                {% if zakres_dat == "wszystkie" %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-wszystkie' %}"><strong>wszystkie</strong></a></li>
+                {% else %}
+                  <li role="presentation"><a class="zielony" href="{% url 'wyniki:index-wszystkie' %}">wszystkie</a></li>
+                {% endif %}
+
+              </ul>
+            </nav>
+            <nav class="clearfix">
+              <form class="pull-right" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" value="{{ tekst_wyszukiwania }}" placeholder="Pesel, nazwisko lub imię" name="q">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+              </form>
+            </nav>
+          </div>
+{% endblock content-opcje %}
+
+
+
+{% block title-nazwa %}Zestawienie zleceń{% endblock title-nazwa %}
+
+
+
+{% block content %}
+
+{% if lista_zlecen %}
+<div>
+{% if zakres_dat == "niepobrane" %}
+<a class="zielony" href="{% url 'wyniki:niepobrane-zip' %}"><strong>Pobierz wszystkie jako zip</strong></a>
+{% endif %}
+</div>
+<table class="table table-sm table-borderless table-hover">
+  <colgroup>
+    <col class="col-sm-2">
+    <col class="col-sm-4">
+    <col class="col-sm-1">
+    <col class="col-sm-5">
+
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Data</th>
+      <th scope="col">Pacjent</th>
+      <th scope="col">Zlecenie</th>
+      <th scope="col">Badania</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for zlecenie in lista_zlecen %}
+    <tr>
+      <td>{{ zlecenie.na_dzien|date:"SHORT_DATE_FORMAT" }}</td>
+      <td>{{ zlecenie.pacjent|title  }}</td>
+      <td>
+        <a class="zielony" href="{% url 'wyniki:zlecenie' zlecenie.numer %}">{{ zlecenie.numer }}</a>
+      </td>
+      <td class="small">
+
+          {% regroup zlecenie.wyniki.all by grupa as badania_list %}
+          {% for wynik in badania_list  %}
+
+              {% for badanie in wynik.list %}
+                {% if not badanie.parent %}
+                  {{ badanie.badanie }}{% if not forloop.last  %}, {% endif  %}
+                {% endif  %}
+              {% endfor %}
+          {% endfor %}
+
+      </td>
+    </tr>
+{% endfor %}
+
+  </tbody>
+</table>
+{% else %}
+    <p>Brak zleceń.</p>
+{% endif %}
+    <div class="row">
+            <nav>
+              <ul class="list-inline text-center small">
+                
+        {% if tekst_wyszukiwania %}
+        {% if lista_zlecen.has_previous %}
+        <li role="presentation"><a class="zielony" href="?q={{ tekst_wyszukiwania }}&amp;page=1">&laquo; pierwsza</a></li>
+                  <li role="presentation"><a class="zielony" href="?q={{ tekst_wyszukiwania }}&amp;page={{ lista_zlecen.previous_page_number }}">poprzednia</a></li>
+        {% endif %}
+                  <li role="presentation">Strona {{ lista_zlecen.number }} z {{ lista_zlecen.paginator.num_pages }}</li>
+        {% if lista_zlecen.has_next %}
+                  <li role="presentation"><a class="zielony" href="?q={{ tekst_wyszukiwania }}&amp;page={{ lista_zlecen.next_page_number }}">następna</a></li>
+                  <li role="presentation"><a class="zielony" href="?q={{ tekst_wyszukiwania }}&amp;page={{ lista_zlecen.paginator.num_pages }}">ostatnia &raquo;</a></li>
+        {% endif %}
+        {% else  %}
+
+        {% if lista_zlecen.has_previous %}
+                  <li role="presentation"><a class="zielony" href="?page=1">&laquo; pierwsza</a></li>
+                  <li role="presentation"><a class="zielony" href="?page={{ lista_zlecen.previous_page_number }}">poprzednia</a></li>
+        {% endif %}
+                  <li role="presentation">Strona {{ lista_zlecen.number }} z {{ lista_zlecen.paginator.num_pages }}</li>
+        {% if lista_zlecen.has_next %}
+                  <li role="presentation"><a class="zielony" href="?page={{ lista_zlecen.next_page_number }}">następna</a></li>
+                  <li role="presentation"><a class="zielony" href="?page={{ lista_zlecen.paginator.num_pages }}">ostatnia &raquo;</a></li>
+        {% endif %}
+
+        {% endif %}
+              </ul>
+            </nav>
+        </div>
+            
+
+{% endblock content %}
+
+
+
+

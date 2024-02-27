@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href={% static 'css/favicon.png' %}>
+    
+
+    <title>{% block title %}biglodl{% endblock title %}</title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'select2-4.0.12/dist/css/select2.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/project.css' %}">
+
+    {% block css %}
+    {% endblock %}
+    <!--
+    <link href="{% static 'select2-4.0.12/dist/css/select2.min.css' %}" rel="stylesheet" />
+    <script src="{% static 'select2-4.0.12/dist/js/select2.min.js' %}"></script>
+    -->
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a class="zielony"><i class="fa fa-user" aria-hidden="true"></i> {{ user.username }}</a></li>
+            <li role="presentation"><a title="rejestracja" class="zielony" href="{% url 'wyniki:rejestracja' %}"><i class="fa fa-address-book-o fa-lg"></i></a></li>
+            <li role="presentation"><a title="home" class="zielony" href="{% url 'wyniki:index-dzisiaj' %}"><i class="fa fa-home fa-lg"></i></a></li>
+            {% if user.is_staff %}
+            <li role="presentation"><a title="akceptujpdf" class="zielony" href="{% url 'wyniki:akceptowanie_pdf' %}"><i class="fa fa-file-pdf-o fa-lg"></i></a></li>
+            <li role="presentation"><a title="aparaty" class="zielony" href="{% url 'aparaty:kom_aparaty' %}"><i class="fa fa-exchange fa-lg"></i></a></li>
+            {% endif %}
+            <li role="presentation"><a title="wyloguj" class="zielony" href="{% url 'logout' %}"><i class="fa fa-sign-out fa-lg"></i></a></li>
+          </ul>
+        </nav>
+        <h3>biglodl</h3>
+      </div>
+      {% block messages %}
+        {% if messages %}
+          {% for message in messages %}
+             <div{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>
+               {{ message }}
+             </div>
+          {% endfor %}
+        {% endif %}
+      {% endblock messages  %}
+      <div class="container">
+        <div class="row">
+          {% block content-opcje %}
+          {% endblock content-opcje %}
+          <div class="row">
+            <h3>{% block title-nazwa %}{% endblock title-nazwa %}</h3>
+          </div>
+        </div>
+        <div class="row main">
+          {% block content %}
+          {% endblock content %}
+        </div>
+        <div class="row marketing">
+          {% block content-kolumny %}
+          {% endblock content-kolumny %}
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="small">&copy; 2020 Biglo Diagnostyka Laboratoryjna Sp. z o.o.</p>
+      </footer>
+
+    </div> 
+
+  {% block javascript %}
+    <script src="{% static 'jquery-3.2.1/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'select2-4.0.12/dist/js/select2.min.js' %}"></script>
+    <script src="{% static 'select2-4.0.12/dist/js/i18n/pl.js' %}"></script>
+    <script src="{% static 'js/project.js' %}"></script>
+  {% endblock javascript %}
+
+  </body>
+</html>

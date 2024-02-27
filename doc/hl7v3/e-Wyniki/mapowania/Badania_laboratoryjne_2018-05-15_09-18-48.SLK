@@ -1,0 +1,1043 @@
+ID;PW2W 3000;N;E
+P;PGeneral
+P;FTahoma;M160
+P;FTahoma;M200
+B;Y103;X5
+F;G;M255
+F;W1 1 8
+F;W2 2 48
+F;W3 3 24
+F;W4 4 14
+F;W5 5 6
+F;SLRTBM0;FG0C;Y1;X1
+C;K"Kod"
+F;SLRTBM0;FG0C;Y1;X2
+C;K"Nazwa"
+F;SLRTBM0;FG0C;Y1;X3
+C;K"Material"
+F;SLRTBM0;FG0C;Y1;X4
+C;K"Grupa"
+F;SLRTBM0;FG0C;Y1;X5
+C;K"Procedura"
+
+F;SLTRBM1;FG0L;Y2;X1
+C;K"BIS001"
+F;SLTRBM1;FG0L;Y2;X2
+C;K"Albumina"
+F;SLTRBM1;FG0L;Y2;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y2;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y2;X5
+C;K"I09"
+F;SLTRBM1;FG0L;Y3;X1
+C;K"BIS002"
+F;SLTRBM1;FG0L;Y3;X2
+C;K"Aminotransferaza alaninowa (ALT)"
+F;SLTRBM1;FG0L;Y3;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y3;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y3;X5
+C;K"I17"
+F;SLTRBM1;FG0L;Y4;X1
+C;K"BIS003"
+F;SLTRBM1;FG0L;Y4;X2
+C;K"Aminotransferaza asparaginianowa (AST)"
+F;SLTRBM1;FG0L;Y4;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y4;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y4;X5
+C;K"I19"
+F;SLTRBM1;FG0L;Y5;X1
+C;K"BIS004"
+F;SLTRBM1;FG0L;Y5;X2
+C;K"Amylaza"
+F;SLTRBM1;FG0L;Y5;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y5;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y5;X5
+C;K"I25"
+F;SLTRBM1;FG0L;Y6;X1
+C;K"1"
+F;SLTRBM1;FG0L;Y6;X2
+C;K"ANA1"
+F;SLTRBM1;FG0L;Y6;X3
+C;K""
+F;SLTRBM1;FG0L;Y6;X4
+C;K"Dermayologia"
+F;SLTRBM1;FG0L;Y6;X5
+C;K""
+F;SLTRBM1;FG0L;Y7;X1
+C;K"BIS005"
+F;SLTRBM1;FG0L;Y7;X2
+C;K"Antygen HBs-AgHBs"
+F;SLTRBM1;FG0L;Y7;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y7;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y7;X5
+C;K"V39"
+F;SLTRBM1;FG0L;Y8;X1
+C;K"I59"
+F;SLTRBM1;FG0L;Y8;X2
+C;K"Antygen SCC"
+F;SLTRBM1;FG0L;Y8;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y8;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y8;X5
+C;K"I59"
+F;SLTRBM1;FG0L;Y9;X1
+C;K"91.821"
+F;SLTRBM1;FG0L;Y9;X2
+C;K"Badanie materia³u biologicznego - posiew jakoœciowy i iloœciowy"
+F;SLTRBM1;FG0L;Y9;X3
+C;K"Wymaz"
+F;SLTRBM1;FG0L;Y9;X4
+C;K"Dermayologia"
+F;SLTRBM1;FG0L;Y9;X5
+C;K"91.821"
+F;SLTRBM1;FG0L;Y10;X1
+C;K"0001"
+F;SLTRBM1;FG0L;Y10;X2
+C;K"Badanie materia³u biologicznego – posiew jakoœciowy wraz z identyfikacj¹ drobnoustroju i antybiogram"
+F;SLTRBM1;FG0L;Y10;X3
+C;K"Wymaz"
+F;SLTRBM1;FG0L;Y10;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y10;X5
+C;K"91.831"
+F;SLTRBM1;FG0L;Y11;X1
+C;K"0002"
+F;SLTRBM1;FG0L;Y11;X2
+C;K"Badanie materia³u z pochwy – posiew z antybiogramem"
+F;SLTRBM1;FG0L;Y11;X3
+C;K"Wymaz"
+F;SLTRBM1;FG0L;Y11;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y11;X5
+C;K"91.433"
+F;SLTRBM1;FG0L;Y12;X1
+C;K"91.891"
+F;SLTRBM1;FG0L;Y12;X2
+C;K"Badanie mikroskopowe materia³u biologicznego - preparat bezpoœredni"
+F;SLTRBM1;FG0L;Y12;X3
+C;K"Wymaz"
+F;SLTRBM1;FG0L;Y12;X4
+C;K"Dermayologia"
+F;SLTRBM1;FG0L;Y12;X5
+C;K"91.891"
+F;SLTRBM1;FG0L;Y13;X1
+C;K"KAL003"
+F;SLTRBM1;FG0L;Y13;X2
+C;K"Badanie ogólne"
+F;SLTRBM1;FG0L;Y13;X3
+C;K"Ka³"
+F;SLTRBM1;FG0L;Y13;X4
+C;K"Badanie ka³u"
+F;SLTRBM1;FG0L;Y13;X5
+C;K"A23"
+F;SLTRBM1;FG0L;Y14;X1
+C;K"L46"
+F;SLTRBM1;FG0L;Y14;X2
+C;K"Beta HCG"
+F;SLTRBM1;FG0L;Y14;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y14;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y14;X5
+C;K"L46"
+F;SLTRBM1;FG0L;Y15;X1
+C;K"BIS006"
+F;SLTRBM1;FG0L;Y15;X2
+C;K"Bia³ko C-reaktywne (CRP)"
+F;SLTRBM1;FG0L;Y15;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y15;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y15;X5
+C;K"I81"
+F;SLTRBM1;FG0L;Y16;X1
+C;K"BIS007"
+F;SLTRBM1;FG0L;Y16;X2
+C;K"Bia³ko ca³kowite"
+F;SLTRBM1;FG0L;Y16;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y16;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y16;X5
+C;K"I77"
+F;SLTRBM1;FG0L;Y17;X1
+C;K"BIS008"
+F;SLTRBM1;FG0L;Y17;X2
+C;K"Bilirubina bezpoœrednia"
+F;SLTRBM1;FG0L;Y17;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y17;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y17;X5
+C;K"I87"
+F;SLTRBM1;FG0L;Y18;X1
+C;K"BIS009"
+F;SLTRBM1;FG0L;Y18;X2
+C;K"Bilirubina ca³kowita"
+F;SLTRBM1;FG0L;Y18;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y18;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y18;X5
+C;K"I89"
+F;SLTRBM1;FG0L;Y19;X1
+C;K"86.11"
+F;SLTRBM1;FG0L;Y19;X2
+C;K"Biopsja skóry/tkanek podskórnych"
+F;SLTRBM1;FG0L;Y19;X3
+C;K"skóra"
+F;SLTRBM1;FG0L;Y19;X4
+C;K"Dermayologia"
+F;SLTRBM1;FG0L;Y19;X5
+C;K"86.11"
+F;SLTRBM1;FG0L;Y20;X1
+C;K"I97"
+F;SLTRBM1;FG0L;Y20;X2
+C;K"Chlorki"
+F;SLTRBM1;FG0L;Y20;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y20;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y20;X5
+C;K"I97"
+F;SLTRBM1;FG0L;Y21;X1
+C;K"BIS010"
+F;SLTRBM1;FG0L;Y21;X2
+C;K"Cholesterol-HDL"
+F;SLTRBM1;FG0L;Y21;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y21;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y21;X5
+C;K"K01"
+F;SLTRBM1;FG0L;Y22;X1
+C;K"BIS011"
+F;SLTRBM1;FG0L;Y22;X2
+C;K"Cholesterol-LDL"
+F;SLTRBM1;FG0L;Y22;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y22;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y22;X5
+C;K"K03"
+F;SLTRBM1;FG0L;Y23;X1
+C;K"BIS012"
+F;SLTRBM1;FG0L;Y23;X2
+C;K"Cholesterol ca³kowity"
+F;SLTRBM1;FG0L;Y23;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y23;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y23;X5
+C;K"I99"
+F;SLTRBM1;FG0L;Y24;X1
+C;K"A12"
+F;SLTRBM1;FG0L;Y24;X2
+C;K"Ciê¿ar W³aœciwy Moczu"
+F;SLTRBM1;FG0L;Y24;X3
+C;K"Mocz"
+F;SLTRBM1;FG0L;Y24;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y24;X5
+C;K"A12"
+F;SLTRBM1;FG0L;Y25;X1
+C;K"F25"
+F;SLTRBM1;FG0L;Y25;X2
+C;K"cytomegalia - przeciwcia³a Igg i Igm"
+F;SLTRBM1;FG0L;Y25;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y25;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y25;X5
+C;K"F25"
+F;SLTRBM1;FG0L;Y26;X1
+C;K"UKK001"
+F;SLTRBM1;FG0L;Y26;X2
+C;K"Czas kaolinowo-kefalinowy (APTT)"
+F;SLTRBM1;FG0L;Y26;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y26;X4
+C;K"Badania uk³adu krzepniêcia"
+F;SLTRBM1;FG0L;Y26;X5
+C;K"G11"
+F;SLTRBM1;FG0L;Y27;X1
+C;K"BIS013"
+F;SLTRBM1;FG0L;Y27;X2
+C;K"Czynnik reumatoidalny (RF)"
+F;SLTRBM1;FG0L;Y27;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y27;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y27;X5
+C;K"K21"
+F;SLTRBM1;FG0L;Y28;X1
+C;K"G49"
+F;SLTRBM1;FG0L;Y28;X2
+C;K"D-dimer"
+F;SLTRBM1;FG0L;Y28;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y28;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y28;X5
+C;K"G49"
+F;SLTRBM1;FG0L;Y29;X1
+C;K"UKK002"
+F;SLTRBM1;FG0L;Y29;X2
+C;K"Fibrynogen"
+F;SLTRBM1;FG0L;Y29;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y29;X4
+C;K"Badania uk³adu krzepniêcia"
+F;SLTRBM1;FG0L;Y29;X5
+C;K"G53"
+F;SLTRBM1;FG0L;Y30;X1
+C;K"BIS014"
+F;SLTRBM1;FG0L;Y30;X2
+C;K"Fosfataza alkaliczna (ALP)"
+F;SLTRBM1;FG0L;Y30;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y30;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y30;X5
+C;K"L11"
+F;SLTRBM1;FG0L;Y31;X1
+C;K"BIS015"
+F;SLTRBM1;FG0L;Y31;X2
+C;K"Fosfataza kwaœna ca³kowita (ACP)"
+F;SLTRBM1;FG0L;Y31;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y31;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y31;X5
+C;K"L15"
+F;SLTRBM1;FG0L;Y32;X1
+C;K"BIS016"
+F;SLTRBM1;FG0L;Y32;X2
+C;K"FT3"
+F;SLTRBM1;FG0L;Y32;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y32;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y32;X5
+C;K"O55"
+F;SLTRBM1;FG0L;Y33;X1
+C;K"BIS017"
+F;SLTRBM1;FG0L;Y33;X2
+C;K"FT4"
+F;SLTRBM1;FG0L;Y33;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y33;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y33;X5
+C;K"O69"
+F;SLTRBM1;FG0L;Y34;X1
+C;K"BIS018"
+F;SLTRBM1;FG0L;Y34;X2
+C;K"Gammaglutamylotranspeptydaza (GGTP)"
+F;SLTRBM1;FG0L;Y34;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y34;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y34;X5
+C;K"L31"
+F;SLTRBM1;FG0L;Y35;X1
+C;K"BIS019"
+F;SLTRBM1;FG0L;Y35;X2
+C;K"Glukoza"
+F;SLTRBM1;FG0L;Y35;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y35;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y35;X5
+C;K"L43"
+F;SLTRBM1;FG0L;Y36;X1
+C;K"BI001"
+F;SLTRBM1;FG0L;Y36;X2
+C;K"glukoza  2  godz  po  jedzeniu"
+F;SLTRBM1;FG0L;Y36;X3
+C;K""
+F;SLTRBM1;FG0L;Y36;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y36;X5
+C;K""
+F;SLTRBM1;FG0L;Y37;X1
+C;K"D001"
+F;SLTRBM1;FG0L;Y37;X2
+C;K"glukoza  2  godz po  posi³ku."
+F;SLTRBM1;FG0L;Y37;X3
+C;K""
+F;SLTRBM1;FG0L;Y37;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y37;X5
+C;K""
+F;SLTRBM1;FG0L;Y38;X1
+C;K"A15"
+F;SLTRBM1;FG0L;Y38;X2
+C;K"Glukoza w moczu"
+F;SLTRBM1;FG0L;Y38;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y38;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y38;X5
+C;K"A15"
+F;SLTRBM1;FG0L;Y39;X1
+C;K"E65"
+F;SLTRBM1;FG0L;Y39;X2
+C;K"Grupa krwi i RH"
+F;SLTRBM1;FG0L;Y39;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y39;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y39;X5
+C;K"E65"
+F;SLTRBM1;FG0L;Y40;X1
+C;K"V54"
+F;SLTRBM1;FG0L;Y40;X2
+C;K"HCV"
+F;SLTRBM1;FG0L;Y40;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y40;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y40;X5
+C;K"V54"
+F;SLTRBM1;FG0L;Y41;X1
+C;K"H005"
+F;SLTRBM1;FG0L;Y41;X2
+C;K"HgbA1c"
+F;SLTRBM1;FG0L;Y41;X3
+C;K""
+F;SLTRBM1;FG0L;Y41;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y41;X5
+C;K""
+F;SLTRBM1;FG0L;Y42;X1
+C;K"L65"
+F;SLTRBM1;FG0L;Y42;X2
+C;K"Hormon FSH"
+F;SLTRBM1;FG0L;Y42;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y42;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y42;X5
+C;K"L65"
+F;SLTRBM1;FG0L;Y43;X1
+C;K"BIS020"
+F;SLTRBM1;FG0L;Y43;X2
+C;K"Hormon tyreotropowy (TSH)"
+F;SLTRBM1;FG0L;Y43;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y43;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y43;X5
+C;K"L69"
+F;SLTRBM1;FG0L;Y44;X1
+C;K"F38"
+F;SLTRBM1;FG0L;Y44;X2
+C;K"HPV Wirus brodawczaka ludzkiego"
+F;SLTRBM1;FG0L;Y44;X3
+C;K"Wymaz"
+F;SLTRBM1;FG0L;Y44;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y44;X5
+C;K"F38"
+F;SLTRBM1;FG0L;Y45;X1
+C;K"MOC001"
+F;SLTRBM1;FG0L;Y45;X2
+C;K"Iloœciowe oznaczanie amylazy"
+F;SLTRBM1;FG0L;Y45;X3
+C;K"Mocz"
+F;SLTRBM1;FG0L;Y45;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y45;X5
+C;K"I25"
+F;SLTRBM1;FG0L;Y46;X1
+C;K"MOC002"
+F;SLTRBM1;FG0L;Y46;X2
+C;K"Iloœciowe oznaczanie bia³ka"
+F;SLTRBM1;FG0L;Y46;X3
+C;K"Mocz"
+F;SLTRBM1;FG0L;Y46;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y46;X5
+C;K"A07"
+F;SLTRBM1;FG0L;Y47;X1
+C;K"MOC003"
+F;SLTRBM1;FG0L;Y47;X2
+C;K"Iloœciowe oznaczanie glukozy"
+F;SLTRBM1;FG0L;Y47;X3
+C;K"Mocz"
+F;SLTRBM1;FG0L;Y47;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y47;X5
+C;K"A15"
+F;SLTRBM1;FG0L;Y48;X1
+C;K"MOC004"
+F;SLTRBM1;FG0L;Y48;X2
+C;K"Iloœciowe oznaczanie wapnia"
+F;SLTRBM1;FG0L;Y48;X3
+C;K"Mocz"
+F;SLTRBM1;FG0L;Y48;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y48;X5
+C;K"O75"
+F;SLTRBM1;FG0L;Y49;X1
+C;K"BIS021"
+F;SLTRBM1;FG0L;Y49;X2
+C;K"Kinaza kreatynowa (CK)"
+F;SLTRBM1;FG0L;Y49;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y49;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y49;X5
+C;K"M18"
+F;SLTRBM1;FG0L;Y50;X1
+C;K"BIS022"
+F;SLTRBM1;FG0L;Y50;X2
+C;K"Kreatynina"
+F;SLTRBM1;FG0L;Y50;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y50;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y50;X5
+C;K"M37"
+F;SLTRBM1;FG0L;Y51;X1
+C;K"KAL001"
+F;SLTRBM1;FG0L;Y51;X2
+C;K"Krew utajona - metod¹ immunochemiczn¹"
+F;SLTRBM1;FG0L;Y51;X3
+C;K"Ka³"
+F;SLTRBM1;FG0L;Y51;X4
+C;K"Badanie ka³u"
+F;SLTRBM1;FG0L;Y51;X5
+C;K"A17"
+F;SLTRBM1;FG0L;Y52;X1
+C;K"BIS023"
+F;SLTRBM1;FG0L;Y52;X2
+C;K"Kwas moczowy"
+F;SLTRBM1;FG0L;Y52;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y52;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y52;X5
+C;K"M45"
+F;SLTRBM1;FG0L;Y53;X1
+C;K"BIS070"
+F;SLTRBM1;FG0L;Y53;X2
+C;K"LDH"
+F;SLTRBM1;FG0L;Y53;X3
+C;K""
+F;SLTRBM1;FG0L;Y53;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y53;X5
+C;K""
+F;SLTRBM1;FG0L;Y54;X1
+C;K"H015"
+F;SLTRBM1;FG0L;Y54;X2
+C;K"leukocytoza"
+F;SLTRBM1;FG0L;Y54;X3
+C;K""
+F;SLTRBM1;FG0L;Y54;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y54;X5
+C;K""
+F;SLTRBM1;FG0L;Y55;X1
+C;K"BIC01"
+F;SLTRBM1;FG0L;Y55;X2
+C;K"lipidogram"
+F;SLTRBM1;FG0L;Y55;X3
+C;K""
+F;SLTRBM1;FG0L;Y55;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y55;X5
+C;K""
+F;SLTRBM1;FG0L;Y56;X1
+C;K"M87"
+F;SLTRBM1;FG0L;Y56;X2
+C;K"Magnez"
+F;SLTRBM1;FG0L;Y56;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y56;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y56;X5
+C;K"M87"
+F;SLTRBM1;FG0L;Y57;X1
+C;K"L07"
+F;SLTRBM1;FG0L;Y57;X2
+C;K"Marker AFP"
+F;SLTRBM1;FG0L;Y57;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y57;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y57;X5
+C;K"L07"
+F;SLTRBM1;FG0L;Y58;X1
+C;K"I41"
+F;SLTRBM1;FG0L;Y58;X2
+C;K"Marker CA 125"
+F;SLTRBM1;FG0L;Y58;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y58;X4
+C;K"Markery"
+F;SLTRBM1;FG0L;Y58;X5
+C;K"I41"
+F;SLTRBM1;FG0L;Y59;X1
+C;K"I43"
+F;SLTRBM1;FG0L;Y59;X2
+C;K"Marker Ca 15-3"
+F;SLTRBM1;FG0L;Y59;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y59;X4
+C;K"Markery"
+F;SLTRBM1;FG0L;Y59;X5
+C;K"I43"
+F;SLTRBM1;FG0L;Y60;X1
+C;K"I45"
+F;SLTRBM1;FG0L;Y60;X2
+C;K"Marker CA 19-9"
+F;SLTRBM1;FG0L;Y60;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y60;X4
+C;K"Markery"
+F;SLTRBM1;FG0L;Y60;X5
+C;K"I45"
+F;SLTRBM1;FG0L;Y61;X1
+C;K"I53"
+F;SLTRBM1;FG0L;Y61;X2
+C;K"Marker CEA"
+F;SLTRBM1;FG0L;Y61;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y61;X4
+C;K"Markery"
+F;SLTRBM1;FG0L;Y61;X5
+C;K"I53"
+F;SLTRBM1;FG0L;Y62;X1
+C;K"I52"
+F;SLTRBM1;FG0L;Y62;X2
+C;K"Marker HE4"
+F;SLTRBM1;FG0L;Y62;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y62;X4
+C;K"Markery"
+F;SLTRBM1;FG0L;Y62;X5
+C;K"I52"
+F;SLTRBM1;FG0L;Y63;X1
+C;K"BIS024"
+F;SLTRBM1;FG0L;Y63;X2
+C;K"Miano antystreptolizyn O (ASO)"
+F;SLTRBM1;FG0L;Y63;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y63;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y63;X5
+C;K"U75"
+F;SLTRBM1;FG0L;Y64;X1
+C;K"A07"
+F;SLTRBM1;FG0L;Y64;X2
+C;K"Mocz - Mikroalbumina"
+F;SLTRBM1;FG0L;Y64;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y64;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y64;X5
+C;K"A07"
+F;SLTRBM1;FG0L;Y65;X1
+C;K"BIS025"
+F;SLTRBM1;FG0L;Y65;X2
+C;K"Mocznik"
+F;SLTRBM1;FG0L;Y65;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y65;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y65;X5
+C;K"N13"
+F;SLTRBM1;FG0L;Y66;X1
+C;K"HEM001"
+F;SLTRBM1;FG0L;Y66;X2
+C;K"Morfologia krwi obwodowej z p³ytkami krwi"
+F;SLTRBM1;FG0L;Y66;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y66;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y66;X5
+C;K"C53"
+F;SLTRBM1;FG0L;Y67;X1
+C;K"HEM002"
+F;SLTRBM1;FG0L;Y67;X2
+C;K"Morfologia krwi obwodowej z wzorem odsetkowym i p³ytkami krwi"
+F;SLTRBM1;FG0L;Y67;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y67;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y67;X5
+C;K"C55"
+F;SLTRBM1;FG0L;Y68;X1
+C;K"HEM003"
+F;SLTRBM1;FG0L;Y68;X2
+C;K"Odczyn opadania krwinek czerwonych (OB)"
+F;SLTRBM1;FG0L;Y68;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y68;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y68;X5
+C;K"C59"
+F;SLTRBM1;FG0L;Y69;X1
+C;K"MOC005"
+F;SLTRBM1;FG0L;Y69;X2
+C;K"Ogólne badanie moczu z ocen¹ w³aœciwoœci fizycznych, chemicznych oraz ocen¹ mikroskopow¹ osadu"
+F;SLTRBM1;FG0L;Y69;X3
+C;K"Mocz"
+F;SLTRBM1;FG0L;Y69;X4
+C;K"Badanie moczu"
+F;SLTRBM1;FG0L;Y69;X5
+C;K"A01"
+F;SLTRBM1;FG0L;Y70;X1
+C;K"KAL002"
+F;SLTRBM1;FG0L;Y70;X2
+C;K"Paso¿yty"
+F;SLTRBM1;FG0L;Y70;X3
+C;K"Ka³"
+F;SLTRBM1;FG0L;Y70;X4
+C;K"Badanie ka³u"
+F;SLTRBM1;FG0L;Y70;X5
+C;K"A21"
+F;SLTRBM1;FG0L;Y71;X1
+C;K"HE01"
+F;SLTRBM1;FG0L;Y71;X2
+C;K"p³ytki  -  cytrynian"
+F;SLTRBM1;FG0L;Y71;X3
+C;K""
+F;SLTRBM1;FG0L;Y71;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y71;X5
+C;K""
+F;SLTRBM1;FG0L;Y72;X1
+C;K"P002"
+F;SLTRBM1;FG0L;Y72;X2
+C;K"posiew  wymazu  z  nosa"
+F;SLTRBM1;FG0L;Y72;X3
+C;K""
+F;SLTRBM1;FG0L;Y72;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y72;X5
+C;K""
+F;SLTRBM1;FG0L;Y73;X1
+C;K"0004"
+F;SLTRBM1;FG0L;Y73;X2
+C;K"posiew ka³u  w  kierunku  grzybów"
+F;SLTRBM1;FG0L;Y73;X3
+C;K""
+F;SLTRBM1;FG0L;Y73;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y73;X5
+C;K""
+F;SLTRBM1;FG0L;Y74;X1
+C;K"MIK001"
+F;SLTRBM1;FG0L;Y74;X2
+C;K"Posiew ka³u w kierunku pa³eczek Salmonella i Shigella"
+F;SLTRBM1;FG0L;Y74;X3
+C;K"Ka³"
+F;SLTRBM1;FG0L;Y74;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y74;X5
+C;K"90.92"
+F;SLTRBM1;FG0L;Y75;X1
+C;K"MIK002"
+F;SLTRBM1;FG0L;Y75;X2
+C;K"Posiew moczu z antybiogramem"
+F;SLTRBM1;FG0L;Y75;X3
+C;K"Mocz"
+F;SLTRBM1;FG0L;Y75;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y75;X5
+C;K"91.33"
+F;SLTRBM1;FG0L;Y76;X1
+C;K"P001"
+F;SLTRBM1;FG0L;Y76;X2
+C;K"posiew wymazu  z  gard³a"
+F;SLTRBM1;FG0L;Y76;X3
+C;K""
+F;SLTRBM1;FG0L;Y76;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y76;X5
+C;K""
+F;SLTRBM1;FG0L;Y77;X1
+C;K"MIK003"
+F;SLTRBM1;FG0L;Y77;X2
+C;K"Posiew wymazu z gard³a z antybiogramem"
+F;SLTRBM1;FG0L;Y77;X3
+C;K"Wymaz"
+F;SLTRBM1;FG0L;Y77;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y77;X5
+C;K"91.831"
+F;SLTRBM1;FG0L;Y78;X1
+C;K"BIS026"
+F;SLTRBM1;FG0L;Y78;X2
+C;K"Potas"
+F;SLTRBM1;FG0L;Y78;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y78;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y78;X5
+C;K"N45"
+F;SLTRBM1;FG0L;Y79;X1
+C;K"N59"
+F;SLTRBM1;FG0L;Y79;X2
+C;K"Prolaktyna"
+F;SLTRBM1;FG0L;Y79;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y79;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y79;X5
+C;K"N59"
+F;SLTRBM1;FG0L;Y80;X1
+C;K"BIS027"
+F;SLTRBM1;FG0L;Y80;X2
+C;K"Proteinogram"
+F;SLTRBM1;FG0L;Y80;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y80;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y80;X5
+C;K"I79"
+F;SLTRBM1;FG0L;Y81;X1
+C;K"E05"
+F;SLTRBM1;FG0L;Y81;X2
+C;K"Przeciwcia³a odpornoœciowe"
+F;SLTRBM1;FG0L;Y81;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y81;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y81;X5
+C;K"E05"
+F;SLTRBM1;FG0L;Y82;X1
+C;K"BIS028"
+F;SLTRBM1;FG0L;Y82;X2
+C;K"PSA – Antygen swoisty dla stercza ca³kowity"
+F;SLTRBM1;FG0L;Y82;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y82;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y82;X5
+C;K"I61"
+F;SLTRBM1;FG0L;Y83;X1
+C;K"HEM004"
+F;SLTRBM1;FG0L;Y83;X2
+C;K"Retykulocyty"
+F;SLTRBM1;FG0L;Y83;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y83;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y83;X5
+C;K"C69"
+F;SLTRBM1;FG0L;Y84;X1
+C;K"HE007"
+F;SLTRBM1;FG0L;Y84;X2
+C;K"rozmaz  manualnie"
+F;SLTRBM1;FG0L;Y84;X3
+C;K""
+F;SLTRBM1;FG0L;Y84;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y84;X5
+C;K""
+F;SLTRBM1;FG0L;Y85;X1
+C;K"BIS029"
+F;SLTRBM1;FG0L;Y85;X2
+C;K"Sód"
+F;SLTRBM1;FG0L;Y85;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y85;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y85;X5
+C;K"O35"
+F;SLTRBM1;FG0L;Y86;X1
+C;K"BIS030"
+F;SLTRBM1;FG0L;Y86;X2
+C;K"Stê¿enie hemoglobiny glikowanej (HbA1c)"
+F;SLTRBM1;FG0L;Y86;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y86;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y86;X5
+C;K"L55"
+F;SLTRBM1;FG0L;Y87;X1
+C;K"BIS031"
+F;SLTRBM1;FG0L;Y87;X2
+C;K"Stê¿enie transferyny"
+F;SLTRBM1;FG0L;Y87;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y87;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y87;X5
+C;K"O43"
+F;SLTRBM1;FG0L;Y88;X1
+C;K"BIS032"
+F;SLTRBM1;FG0L;Y88;X2
+C;K"Test obci¹¿enia glukoz¹"
+F;SLTRBM1;FG0L;Y88;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y88;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y88;X5
+C;K"L43"
+F;SLTRBM1;FG0L;Y89;X1
+C;K"00001"
+F;SLTRBM1;FG0L;Y89;X2
+C;K"Test Roma"
+F;SLTRBM1;FG0L;Y89;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y89;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y89;X5
+C;K""
+F;SLTRBM1;FG0L;Y90;X1
+C;K"O41"
+F;SLTRBM1;FG0L;Y90;X2
+C;K"Testosteron"
+F;SLTRBM1;FG0L;Y90;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y90;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y90;X5
+C;K"O41"
+F;SLTRBM1;FG0L;Y91;X1
+C;K"X49"
+F;SLTRBM1;FG0L;Y91;X2
+C;K"Toxoplasmoza"
+F;SLTRBM1;FG0L;Y91;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y91;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y91;X5
+C;K"X49"
+F;SLTRBM1;FG0L;Y92;X1
+C;K"X47"
+F;SLTRBM1;FG0L;Y92;X2
+C;K"Toxoplasmoza IgG + IgM Przeciwcia³a"
+F;SLTRBM1;FG0L;Y92;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y92;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y92;X5
+C;K"X47"
+F;SLTRBM1;FG0L;Y93;X1
+C;K"BIS033"
+F;SLTRBM1;FG0L;Y93;X2
+C;K"Triglicerydy (TG)"
+F;SLTRBM1;FG0L;Y93;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y93;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y93;X5
+C;K"O49"
+F;SLTRBM1;FG0L;Y94;X1
+C;K"BIS034"
+F;SLTRBM1;FG0L;Y94;X2
+C;K"VDRL"
+F;SLTRBM1;FG0L;Y94;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y94;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y94;X5
+C;K"U79"
+F;SLTRBM1;FG0L;Y95;X1
+C;K"BIS036"
+F;SLTRBM1;FG0L;Y95;X2
+C;K"Wapñ ca³kowity"
+F;SLTRBM1;FG0L;Y95;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y95;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y95;X5
+C;K"O75"
+F;SLTRBM1;FG0L;Y96;X1
+C;K"O77"
+F;SLTRBM1;FG0L;Y96;X2
+C;K"Wapñ ca³kowity (Ca)"
+F;SLTRBM1;FG0L;Y96;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y96;X4
+C;K"Badania hematologiczne"
+F;SLTRBM1;FG0L;Y96;X5
+C;K"O77"
+F;SLTRBM1;FG0L;Y97;X1
+C;K"BIS035"
+F;SLTRBM1;FG0L;Y97;X2
+C;K"Wapñ zjonizowany"
+F;SLTRBM1;FG0L;Y97;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y97;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y97;X5
+C;K"O75"
+F;SLTRBM1;FG0L;Y98;X1
+C;K"V20"
+F;SLTRBM1;FG0L;Y98;X2
+C;K"Wirus ró¿yczki"
+F;SLTRBM1;FG0L;Y98;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y98;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y98;X5
+C;K"V20"
+F;SLTRBM1;FG0L;Y99;X1
+C;K"F91"
+F;SLTRBM1;FG0L;Y99;X2
+C;K"Wirus/przeciwcia³a HIV"
+F;SLTRBM1;FG0L;Y99;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y99;X4
+C;K"Badania mikrobiologiczne"
+F;SLTRBM1;FG0L;Y99;X5
+C;K"F91"
+F;SLTRBM1;FG0L;Y100;X1
+C;K"U85"
+F;SLTRBM1;FG0L;Y100;X2
+C;K"WR"
+F;SLTRBM1;FG0L;Y100;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y100;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y100;X5
+C;K"U85"
+F;SLTRBM1;FG0L;Y101;X1
+C;K"UKK003"
+F;SLTRBM1;FG0L;Y101;X2
+C;K"WskaŸnik protrombinowy (INR)"
+F;SLTRBM1;FG0L;Y101;X3
+C;K"Krew"
+F;SLTRBM1;FG0L;Y101;X4
+C;K"Badania uk³adu krzepniêcia"
+F;SLTRBM1;FG0L;Y101;X5
+C;K"G21"
+F;SLTRBM1;FG0L;Y102;X1
+C;K"BIS037"
+F;SLTRBM1;FG0L;Y102;X2
+C;K"¯elazo"
+F;SLTRBM1;FG0L;Y102;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y102;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y102;X5
+C;K"O95"
+F;SLTRBM1;FG0L;Y103;X1
+C;K"BIS038"
+F;SLTRBM1;FG0L;Y103;X2
+C;K"¯elazo – ca³kowita zdolnoœæ wi¹zania (TIBC)"
+F;SLTRBM1;FG0L;Y103;X3
+C;K"Surowica"
+F;SLTRBM1;FG0L;Y103;X4
+C;K"Badania biochemiczne i immunochemiczne"
+F;SLTRBM1;FG0L;Y103;X5
+C;K"O93"
+E

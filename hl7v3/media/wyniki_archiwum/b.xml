@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html>
+ <body>
+  <clinicaldocument moodcode="EVN" xmlns="urn:hl7-org:v3">
+   <typeid extension="POCD_HD000040" root="2.16.840.1.113883.1.3">
+   </typeid>
+   <id extension="7710820" root="1987564">
+   </id>
+   <code code="26436-6" codesystem="2.16.840.1.113883.6.1" codesystemname="LOINC" displayname="Wynik">
+   </code>
+   <title>
+    Sprawozdanie z badania laboratoryjnego
+   </title>
+   <effectivetime value="20180806134500">
+   </effectivetime>
+   <confidentialitycode code="N" codesystem="2.16.840.1.113883.5.25">
+   </confidentialitycode>
+   <languagecode code="pl-PL">
+   </languagecode>
+   <recordtarget contextcontrolcode="OP" typecode="RCT">
+    <patientrole>
+     <id extension="48080509882" root="2.16.840.1.113883.3.4424.1.1.616">
+     </id>
+     <addr>
+      <country>
+       PL
+      </country>
+      <city>
+       PAWŁÓW
+      </city>
+      <housenumber>
+      </housenumber>
+      <postalcode>
+      </postalcode>
+      <streetname>
+       xxx
+      </streetname>
+     </addr>
+     <patient>
+      <name>
+       <family>
+        xxxx
+       </family>
+       <given>
+        xxx
+       </given>
+      </name>
+      <administrativegendercode code="F" codesystem="2.16.840.1.113883.5.1">
+      </administrativegendercode>
+      <birthtime value="19480805">
+      </birthtime>
+     </patient>
+    </patientrole>
+   </recordtarget>
+   <author contextcontrolcode="OP" typecode="AUT">
+    <time value="20180806134502">
+    </time>
+    <assignedauthor classcode="ASSIGNED">
+     <id extension="" root="2.16.840.1.113883.3.4424.1.1.616">
+     </id>
+     <assignedperson classcode="PSN" determinercode="INSTANCE">
+      <name>
+       <family>
+        xxx
+       </family>
+       <given>
+        xxx
+       </given>
+      </name>
+     </assignedperson>
+    </assignedauthor>
+   </author>
+   <custodian typecode="CST">
+    <assignedcustodian classcode="ASSIGNED">
+     <representedcustodianorganization classcode="ORG" determinercode="INSTANCE">
+      <id extension="999999999" root="2.16.840.1.113883.3.4424.2.2">
+      </id>
+      <name>
+       Laboratorium test
+      </name>
+      <addr>
+       <country>
+        PL
+       </country>
+       <city>
+        Wrocław
+       </city>
+       <housenumber>
+        45
+       </housenumber>
+       <postalcode>
+        00-000
+       </postalcode>
+       <streetname>
+        Jakaś ulica
+       </streetname>
+      </addr>
+     </representedcustodianorganization>
+    </assignedcustodian>
+   </custodian>
+   <informationrecipient>
+    <intendedrecipient>
+     <id extension="830483869" root="2.16.840.1.113883.3.4424.2.2">
+     </id>
+    </intendedrecipient>
+   </informationrecipient>
+   <infulfillmentof>
+    <order moodcode="RQO">
+     <id extension="00004316910399999999" root="2.16.840.1.113883.3.3286.1000.1.20">
+     </id>
+    </order>
+   </infulfillmentof>
+   <component>
+    <structuredbody classcode="DOCBODY" moodcode="EVN">
+     <component>
+      <section classcode="DOCSECT" moodcode="EVN">
+       <code code="52482-7" codesystem="2.16.840.1.113883.6.1" codesystemname="LOINC" displayname="Zlecone badania">
+       </code>
+       <entry>
+        <observation classcode="OBS" moodcode="EVN">
+         <id extension="7876106400" root="130000052">
+         </id>
+         <code code="100" codesystem="130000052" codesystemname="Dilab" displayname="ALAT">
+         </code>
+         <text>
+         </text>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290499" codesystem="130000052" codesystemname="Dilab" displayname="ALAT (I17)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="U/L" value="10.4" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="0">
+              </low>
+              <high value="35">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+        </observation>
+       </entry>
+       <entry>
+        <observation classcode="OBS" moodcode="EVN">
+         <id extension="7876106400" root="130000052">
+         </id>
+         <code code="101" codesystem="130000052" codesystemname="Dilab" displayname="ASPAT">
+         </code>
+         <text>
+         </text>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290291" codesystem="130000052" codesystemname="Dilab" displayname="ASPAT (I19)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="U/L" value="18.3" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="0">
+              </low>
+              <high value="35">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+        </observation>
+       </entry>
+       <entry>
+        <observation classcode="OBS" moodcode="EVN">
+         <id extension="7876106400" root="130000052">
+         </id>
+         <code code="1021" codesystem="130000052" codesystemname="Dilab" displayname="Glukoza">
+         </code>
+         <text>
+         </text>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290597" codesystem="130000052" codesystemname="Dilab" displayname="Glukoza (L43)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="mg/dL" value="102.4" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="HX" codesystem="2.16.840.1.113883.5.83" displayname="above high threshold">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="60">
+              </low>
+              <high value="99">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+        </observation>
+       </entry>
+       <entry>
+        <observation classcode="OBS" moodcode="EVN">
+         <id extension="7876106400" root="130000052">
+         </id>
+         <code code="120" codesystem="130000052" codesystemname="Dilab" displayname="Lipidogram">
+         </code>
+         <text>
+         </text>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290191" codesystem="130000052" codesystemname="Dilab" displayname="Cholesterol całkowity (I99)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="mg/dl" value="162" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="115">
+              </low>
+              <high value="190">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290192" codesystem="130000052" codesystemname="Dilab" displayname="Cholesterol HDL (K01)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="mg/dL" value="43.1" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="45">
+              </low>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290193" codesystem="130000052" codesystemname="Dilab" displayname="Cholesterol LDL">
+           </code>
+           <text>
+            &lt; 70 mg/dl u osób z bardzo dużym ryzykiem sercowo-naczyniowym &lt; 100 mg/dl u osób z dużym ryzykiem &lt; 115 mg/dl u osób z umiarkowanym lub małym ryzykiem
+           </text>
+           <value ns0:type="PQ" unit="mg/dl" value="82" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              &lt; 70 mg/dl u osób z bardzo dużym ryzykiem sercowo-naczyniowym &lt; 100 mg/dl u osób z dużym ryzykiem &lt; 115 mg/dl u osób z umiarkowanym lub małym ryzykiem
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290194" codesystem="130000052" codesystemname="Dilab" displayname="Trójglicerydy (O49)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="mg/dl" value="188" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="HX" codesystem="2.16.840.1.113883.5.83" displayname="above high threshold">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <high value="150">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+        </observation>
+       </entry>
+       <entry>
+        <observation classcode="OBS" moodcode="EVN">
+         <id extension="7876106400" root="130000052">
+         </id>
+         <code code="1" codesystem="130000052" codesystemname="Dilab" displayname="Morfologia-18 parametrów">
+         </code>
+         <text>
+         </text>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290132" codesystem="130000052" codesystemname="Dilab" displayname="Leukocyty">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="tys/ul" value="6.6" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="4">
+              </low>
+              <high value="10">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290836" codesystem="130000052" codesystemname="Dilab" displayname="Erytrocyty">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="mln/ul" value="5.58" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="HX" codesystem="2.16.840.1.113883.5.83" displayname="above high threshold">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="4">
+              </low>
+              <high value="5.2">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290131" codesystem="130000052" codesystemname="Dilab" displayname="Hemoglobina">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="g/dl" value="15.7" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="12">
+              </low>
+              <high value="16">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290130" codesystem="130000052" codesystemname="Dilab" displayname="Hematokryt">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="%" value="46.7" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="37">
+              </low>
+              <high value="47">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290135" codesystem="130000052" codesystemname="Dilab" displayname="MCV">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="fl" value="84" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="80">
+              </low>
+              <high value="97">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290133" codesystem="130000052" codesystemname="Dilab" displayname="MCH">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="pg" value="28.1" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="26.5">
+              </low>
+              <high value="33.5">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290134" codesystem="130000052" codesystemname="Dilab" displayname="MCHC">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="g/dl" value="33.6" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="32">
+              </low>
+              <high value="37">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290837" codesystem="130000052" codesystemname="Dilab" displayname="Płytki krwi">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="tys/ul" value="192" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="150">
+              </low>
+              <high value="390">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290503" codesystem="130000052" codesystemname="Dilab" displayname="Limfocyty">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="%" value="38.8" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="20">
+              </low>
+              <high value="45">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290504" codesystem="130000052" codesystemname="Dilab" displayname="Inne (Eo, Bazo, Mono)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="%" value="3.10" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="1">
+              </low>
+              <high value="13">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290505" codesystem="130000052" codesystemname="Dilab" displayname="Neutrofile">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="%" value="58.1" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="46">
+              </low>
+              <high value="75">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290506" codesystem="130000052" codesystemname="Dilab" displayname="Limfocyty">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="tys/ul" value="2.5" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="1.5">
+              </low>
+              <high value="3.5">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290507" codesystem="130000052" codesystemname="Dilab" displayname="Inne (Eo, Bazo, Mono)">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="tys/ul" value="0.2" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="0.2">
+              </low>
+              <high value="1">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290508" codesystem="130000052" codesystemname="Dilab" displayname="Neutrofile">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="tys/ul" value="3.9" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="2.5">
+              </low>
+              <high value="5">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290509" codesystem="130000052" codesystemname="Dilab" displayname="RDW-CV">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="%" value="15.8" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="HX" codesystem="2.16.840.1.113883.5.83" displayname="above high threshold">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="10">
+              </low>
+              <high value="15">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290511" codesystem="130000052" codesystemname="Dilab" displayname="MPV">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit="fl" value="8.8" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="6.5">
+              </low>
+              <high value="11">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+        </observation>
+       </entry>
+       <entry>
+        <observation classcode="OBS" moodcode="EVN">
+         <id extension="7876106400" root="130000052">
+         </id>
+         <code code="9" codesystem="130000052" codesystemname="Dilab" displayname="Mocz - analiza ogólna">
+         </code>
+         <text>
+         </text>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290163" codesystem="130000052" codesystemname="Dilab" displayname="Przejrzystość">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            zupełna
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290154" codesystem="130000052" codesystemname="Dilab" displayname="Kolor moczu">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            słomkowy
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290152" codesystem="130000052" codesystemname="Dilab" displayname="Glukoza">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            nieobecne
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290818" codesystem="130000052" codesystemname="Dilab" displayname="Bilirubina">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            nieobecna
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290153" codesystem="130000052" codesystemname="Dilab" displayname="Ketony">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            nieobecne
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290162" codesystem="130000052" codesystemname="Dilab" displayname="pH">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit=" " value="6.5" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="5">
+              </low>
+              <high value="7.5">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290148" codesystem="130000052" codesystemname="Dilab" displayname="Ciężar właściwy">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="PQ" unit=" " value="1.020" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+           </value>
+           <interpretationcode code="N" codesystem="2.16.840.1.113883.5.83" displayname="Normal">
+           </interpretationcode>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="IVL_PQ" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              <low value="1.003">
+              </low>
+              <high value="1.03">
+              </high>
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290146" codesystem="130000052" codesystemname="Dilab" displayname="Białko">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            nieobecne
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290164" codesystem="130000052" codesystemname="Dilab" displayname="Urobilinogen">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            norma
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290543" codesystem="130000052" codesystemname="Dilab" displayname="Leukocyty">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            3 - 5
+           </value>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              norma od: 1-5
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290160" codesystem="130000052" codesystemname="Dilab" displayname="Nabłonki płaskie">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            liczne
+           </value>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290145" codesystem="130000052" codesystemname="Dilab" displayname="Bakterie">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            b. liczne
+           </value>
+           <referencerange typecode="REFV">
+            <observationrange moodcode="EVN.CRT">
+             <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+              norma od: nie wykryto
+             </value>
+            </observationrange>
+           </referencerange>
+          </observation>
+         </entryrelationship>
+         <entryrelationship typecode="COMP">
+          <observation classcode="OBS" moodcode="EVN">
+           <code code="PBA_290161" codesystem="130000052" codesystemname="Dilab" displayname="Pasma śluzu">
+           </code>
+           <text>
+           </text>
+           <value ns0:type="ST" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance">
+            nieliczne
+           </value>
+          </observation>
+         </entryrelationship>
+        </observation>
+       </entry>
+      </section>
+     </component>
+    </structuredbody>
+   </component>
+  </clinicaldocument>
+ </body>
+</html>

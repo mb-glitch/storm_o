@@ -1,0 +1,6 @@
+beautifulsoup4==4.6.0
+Jinja2==2.10
+lxml
+MarkupSafe==1.0
+pkg-resources==0.0.0
+pymssql

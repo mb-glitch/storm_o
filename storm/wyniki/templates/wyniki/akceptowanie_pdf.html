@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title-nazwa %}
+    {% if obrazek %}
+        {{ obrazek.zlecenie.pacjent|title }}
+    {% else %}
+        Brak pdf do akceptacji
+        
+    {% endif %}
+{% endblock title-nazwa %}
+
+{% block content-opcje %}
+          <div class="col-sm-6 pull-right">
+            <nav class="clearfix">
+            <ul class="list-inline pull-right small">
+    {% if obrazek %}
+        <li role="presentation"><a class='zielony'>Pozostało do zaakceptowania: {{ do_sprawdzenia_user }}</a></li>
+    {% else %}
+        {% if do_sprawdzenia_ogolnie > 0 %}
+        <li role="presentation"><a class='czerwony'>Pozostało do zaakceptowania u innych użytkoników: {{ do_sprawdzenia_ogolnie }}</a></li>
+        {% else %}
+        <li role="presentation"><a class='zielony'>Wszystkie wydruki zaakceptowane</a></li>
+        {% endif %}
+    {% endif %}
+              </ul>
+            </nav>
+         </div>
+{% endblock content-opcje %}
+
+{% block content %}
+    {% if obrazek %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Zlecenie numer: {{ obrazek.zlecenie.numer }} z {{ obrazek.zlecenie.zlecone|date:"SHORT_DATETIME_FORMAT"  }}</p>
+                    <form action="{% url 'wyniki:pdf_vote' obrazek.pk %}" method="post">
+                        {% csrf_token %}
+                        <nav class="clearfix">
+                          <form class="pull-right" role="akceptuj">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                  <button class="btn btn-default" name="ok" value="ok" type="submit"><i class="fa fa-check fa-lg zielony"> akceptuj </i></button>
+                                </div>
+                                <div class="input-group-btn">
+                                  <button class="btn btn-default" name="nie" value="nie" type="submit"><i class="fa fa-close fa-lg czerwony"> odrzuć </i></button>
+                                </div>
+                            </div>
+                          </form>
+                        </nav>
+                    </form>
+                    <div class="row mt-5"><br/></div>
+                    <div>
+<table class="table table-sm table-borderless small">
+  <colgroup>
+    <col class="col-sm-4">
+    <col class="col-sm-2">
+    <col class="col-sm-1">
+    <col class="col-sm-5">
+
+  </colgroup>
+  <tbody>
+    {% for wynik in wyniki %}
+      {% if wynik.flaga == 'H' %}
+        <tr class='czerwony'>
+        {% elif wynik.flaga == 'L' %}
+        <tr class='niebieski'>
+        {% else %}
+        <tr>
+      {% endif %}
+        <td>{{ wynik.badanie.nazwa_krotka }} </td>
+        <td>{{ wynik.tekstowy }}</td>
+        <td>{{ wynik.flaga }} </td>
+        <td>{{ wynik.wartosci_referencyjne.wydruk }} </td>
+    </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+                            </div>
+
+                </div>
+                <div class="col-sm-8">
+                    {% for img in obrazek.img.all %}
+                    <a> <img src="{{ img.img.url }}"></a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock content %}
+
+
+
+
+
+
+
